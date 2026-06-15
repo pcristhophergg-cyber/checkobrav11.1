@@ -1,7 +1,14 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.8.1/firebase-app.js";
 import { getFirestore, doc, setDoc, onSnapshot, serverTimestamp } from "https://www.gstatic.com/firebasejs/11.8.1/firebase-firestore.js";
 
-const firebaseConfig={apiKey:"AIzaSyC0kLLCn54MzKQFEFTCXgN6jNqYqCoVw8Q",authDomain:"checkobrav9.firebaseapp.com",projectId:"checkobrav9",storageBucket:"checkobrav9.firebasestorage.app",messagingSenderId:"604869399584",appId:"1:604869399584:web:a43c932c2c907ec275d845",measurementId:"G-YB2LTJ9MWM"};
+const firebaseConfig={
+ apiKey:"AIzaSyAhs794wtsuJJ1zlsEn1-4vS4tANIitfRY",
+ authDomain:"check-obra-c95e5.firebaseapp.com",
+ projectId:"check-obra-c95e5",
+ storageBucket:"check-obra-c95e5.firebasestorage.app",
+ messagingSenderId:"494575819536",
+ appId:"1:494575819536:web:fd4fd5de5b1fcfaa79a395"
+};
 let db=null, cloudReady=false;
 try{const app=initializeApp(firebaseConfig);db=getFirestore(app);cloudReady=true;console.log('✅ Firebase conectado V10')}catch(e){console.warn('Firebase no disponible',e)}
 
